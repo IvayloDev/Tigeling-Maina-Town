@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: affdcab98f0497e46a736f1f437409c3
+timeCreated: 1471586430
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Buildings_sheet_0
+    21300002: Buildings_sheet_1
+    21300004: Buildings_sheet_2
+    21300006: Buildings_sheet_3
+    21300008: Buildings_sheet_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Buildings_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 175
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.5, y: 149.5}
+        - {x: 74.5, y: 143.5}
+        - {x: -12.5, y: 143.5}
+        - {x: -12.5, y: 149.5}
+        - {x: -14.5, y: 151.5}
+        - {x: -12.5, y: 156.5}
+        - {x: -12.5, y: 169.5}
+        - {x: -16.5, y: 173.5}
+        - {x: -29.5, y: 173.5}
+        - {x: -33.5, y: 169.5}
+        - {x: -33.5, y: 156.5}
+        - {x: -31.5, y: 154.5}
+        - {x: -37.5, y: 145.5}
+        - {x: -37.5, y: 143.5}
+        - {x: -83.5, y: 143.5}
+        - {x: -85.5, y: 141.5}
+        - {x: -87.5, y: 130.5}
+        - {x: -87.5, y: -173.5}
+        - {x: 87.5, y: -173.5}
+        - {x: 87.5, y: 151.5}
+        - {x: 76.5, y: 151.5}
+    - name: Buildings_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 307
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 127.5, y: 102.5}
+        - {x: 48.5, y: 101.5}
+        - {x: 48.5, y: 103.5}
+        - {x: 46.5, y: 105.5}
+        - {x: 35.5, y: 109.5}
+        - {x: 11.5, y: 121.5}
+        - {x: 4.5, y: 126.5}
+        - {x: -2.5, y: 133.5}
+        - {x: -9.5, y: 133.5}
+        - {x: -14.5, y: 130.5}
+        - {x: -20.5, y: 124.5}
+        - {x: -26.5, y: 122.5}
+        - {x: -28.5, y: 118.5}
+        - {x: -34.5, y: 118.5}
+        - {x: -36.5, y: 114.5}
+        - {x: -42.5, y: 114.5}
+        - {x: -44.5, y: 110.5}
+        - {x: -53.5, y: 109.5}
+        - {x: -55.5, y: 107.5}
+        - {x: -58.5, y: 96.5}
+        - {x: -63.5, y: 102.5}
+        - {x: -129.5, y: 101.5}
+        - {x: -133.5, y: 97.5}
+        - {x: -138.5, y: 94.5}
+        - {x: -140.5, y: 90.5}
+        - {x: -153.5, y: 89.5}
+        - {x: -153.5, y: -166.5}
+        - {x: 153.5, y: -166.5}
+        - {x: 153.5, y: 93.5}
+        - {x: 132.5, y: 96.5}
+    - name: Buildings_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 235
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116.5, y: 118.5}
+        - {x: 114.5, y: 120.5}
+        - {x: 4.5, y: 120.5}
+        - {x: 4.5, y: 122.5}
+        - {x: 2.5, y: 124.5}
+        - {x: -10.5, y: 124.5}
+        - {x: -12.5, y: 122.5}
+        - {x: -12.5, y: 120.5}
+        - {x: -113.5, y: 120.5}
+        - {x: -115.5, y: 118.5}
+        - {x: -115.5, y: 116.5}
+        - {x: -117.5, y: 116.5}
+        - {x: -117.5, y: -162.5}
+        - {x: 117.5, y: -162.5}
+        - {x: 117.5, y: 116.5}
+        - {x: 116.5, y: 117.5}
+    - name: Buildings_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 167
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83.5, y: 162.5}
+        - {x: -72.5, y: 162.5}
+        - {x: -72.5, y: 164.5}
+        - {x: -74.5, y: 166.5}
+        - {x: -83.5, y: 166.5}
+        - {x: -83.5, y: -168.5}
+        - {x: 72.5, y: -168.5}
+        - {x: 74.5, y: -167.5}
+        - {x: 75.5, y: -165.5}
+        - {x: 83.5, y: -165.5}
+    - name: Buildings_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 159
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.5, y: 106.5}
+        - {x: 33.5, y: 111.5}
+        - {x: 25.5, y: 119.5}
+        - {x: 12.5, y: 130.5}
+        - {x: 4.5, y: 134.5}
+        - {x: -15.5, y: 134.5}
+        - {x: -24.5, y: 130.5}
+        - {x: -32.5, y: 123.5}
+        - {x: -50.5, y: 105.5}
+        - {x: -58.5, y: 101.5}
+        - {x: -57.5, y: 86.5}
+        - {x: -79.5, y: 86.5}
+        - {x: -79.5, y: -152.5}
+        - {x: 79.5, y: -152.5}
+        - {x: 79.5, y: 86.5}
+        - {x: 56.5, y: 90.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
