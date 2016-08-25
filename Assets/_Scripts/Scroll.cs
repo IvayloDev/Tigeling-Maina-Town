@@ -34,7 +34,7 @@ public class Scroll : MonoBehaviour {
 
         Vector3 nextPos = BuildingsPos;
 
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 140; i++) {
 
             Sprite sprite = BuildingsSprites[Random.Range(0, 5)];
             float currentWidth = sprite.bounds.size.x;
@@ -58,7 +58,7 @@ public class Scroll : MonoBehaviour {
         Vector3 nextPos = PeopleBackPos;
 
         //Front
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 100; i++) {
 
             Sprite sprite = PeopleBackSprites[Random.Range(0, 7)];
 
@@ -75,7 +75,7 @@ public class Scroll : MonoBehaviour {
         nextPos = PeopleFrontPos;
 
         //Back
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 100; i++) {
 
             Sprite sprite = PeopleFrontSprites[Random.Range(0, 7)];
 
@@ -96,11 +96,11 @@ public class Scroll : MonoBehaviour {
         if (PlayerMovement.startMoving && !PlayerMovement.isDead) {
 
             if (!CollisionManager.bonusLevelActive) {
-                ScrollObject(TreesHolder, -0.025f);
-                ScrollObject(LampsHolder, -0.025f);
-                ScrollObject(ParentForSpawnedPeopleFront, -0.05f);
-                ScrollObject(ParentForSpawnedPeopleBack, -0.035f);
-                ScrollObject(ParentForSpawnedBuilding, -0.015f);
+                ScrollObject(TreesHolder, 0.045f);
+                ScrollObject(LampsHolder, 0.045f);
+                ScrollObject(ParentForSpawnedPeopleFront, 0.025f);
+                ScrollObject(ParentForSpawnedPeopleBack, 0.042f);
+                ScrollObject(ParentForSpawnedBuilding, 0.05f);
 
             }
         }

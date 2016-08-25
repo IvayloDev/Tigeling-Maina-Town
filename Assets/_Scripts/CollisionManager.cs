@@ -10,11 +10,48 @@ public class CollisionManager : MonoBehaviour {
 
     public static bool bonusLevelActive = false;
 
+    public static bool captured;
+
+    public cameraShake camShake;
+
+    [SerializeField]
+    private PlayerMovement playerMovement;
 
     void Update() {
+
         if (hitCountdown > 0) {
             hitCountdown -= Time.deltaTime;
         }
+
+        if (captured) {
+
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                hitCountdown = 0;
+                captured = false;
+            }
+        }
+
+    }
+
+    void OnTriggerStay2D(Collider2D col) {
+
+        if (col.tag == "Reward2") {
+
+            PlayerMovement.Score += 10;
+            Destroy(col.gameObject, 0.3f);
+
+            if (Input.GetKeyDown(KeyCode.Space) || PlayerMovement.mobileJump) {
+                Debug.Log("logged");
+
+                playerMovement.timeTakenDuringLerp = 0.3f;
+                playerMovement.StartLerping(new Vector3(0.5f, 0.5f, 0), 5f);
+                PlayerMovement.mobileJump = false;
+
+            }
+
+
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D col) {
@@ -23,7 +60,7 @@ public class CollisionManager : MonoBehaviour {
         if (col.tag == "Reward") {
 
             Destroy(col.gameObject);
-            PlayerMovement.Score += Random.Range(5, 30);
+            PlayerMovement.Score += 10;
 
         }
         if (col.tag == "Check1") {
@@ -78,9 +115,17 @@ public class CollisionManager : MonoBehaviour {
 
         }
 
+
         if (col.tag == "Enemy") {
             //flash screen and slow down player
-            hitCountdown = 0.3f;
+            captured = true;
+            camShake.shake_intensity = 0.3f;
+            camShake.Shake();
+            hitCountdown = 15;
+            return;
+
+
+
         }
 
 

@@ -8,11 +8,12 @@ public class PlayerMovement : MonoBehaviour {
     private bool keyAlternate;
 
     private float speed;
+    private float lastJumpCountdown;
 
     private Vector3 nextPos;
     private Vector3 PlayerScreenPos;
 
-    float timeTakenDuringLerp = 0.1f;
+    public float timeTakenDuringLerp = 0.1f;
     private bool isLerping;
     private float _timeStartedLerping;
 
@@ -30,7 +31,15 @@ public class PlayerMovement : MonoBehaviour {
     private Vector2 currentSwipe;
     private Vector2 firstPressPos;
 
+    public static bool mobileJump;
+
+
+    private Animator playerAnim;
+
+
     void Start() {
+
+        playerAnim = GetComponent<Animator>();
 
         speed = 2f;
 
@@ -39,6 +48,7 @@ public class PlayerMovement : MonoBehaviour {
         Score = 0;
 
         jumpCountdown = 0;
+        lastJumpCountdown = 0;
 
         grounded = true;
         isDead = false;
@@ -54,7 +64,7 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
-    void StartLerping(Vector3 lerpDir, float distanceToMove) {
+    public void StartLerping(Vector3 lerpDir, float distanceToMove) {
 
         isLerping = true;
         _timeStartedLerping = Time.time;
@@ -62,24 +72,33 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
+
     //Only for jump on enemy's head
     void OnTriggerEnter2D(Collider2D col) {
-
         if (col.tag == "Head") {
 
-            StartLerping(new Vector3(0.7f, 0.6f, 0), 5f);
+            timeTakenDuringLerp = 0.2f;
+            StartLerping(new Vector3(0.5f, 0.3f, 0), 5f);
+            CollisionManager.captured = false;
 
         }
-
     }
+
+
 
     void Jump() {
 
         if (jumpCountdown >= 1.4f) {
-            StartLerping(new Vector3(1.3f, 1.2f, 0), 4f);
+            StartLerping(new Vector3(0.8f, 0.8f, 0), 4f);
+            playerAnim.SetTrigger("Jump");
+            timeTakenDuringLerp = 0.2f;
+            lastJumpCountdown = 0.5f;
 
         } else
-            StartLerping(new Vector3(0.6f, 1.2f, 0), 4f);
+            StartLerping(new Vector3(0.6f, 0.6f, 0), 4f);
+        playerAnim.SetTrigger("Jump");
+        timeTakenDuringLerp = 0.2f;
+        lastJumpCountdown = 0.5f;
 
     }
 
@@ -100,8 +119,18 @@ public class PlayerMovement : MonoBehaviour {
 
         if (jumpCountdown > 0) {
             jumpCountdown -= Time.deltaTime;
-        } else if (jumpCountdown <= 0) {
+
+        }
+
+        if (lastJumpCountdown > 0) {
+            lastJumpCountdown -= Time.deltaTime;
+        }
+
+        if (jumpCountdown <= 0) {
             jumpCountdown = 0;
+        }
+        if (lastJumpCountdown <= 0) {
+            lastJumpCountdown = 0;
         }
 
         CheckIfLost();
@@ -121,6 +150,7 @@ public class PlayerMovement : MonoBehaviour {
         if (transform.position.y <= -3.25f) {
 
             grounded = true;
+            transform.position = new Vector3(transform.position.x, -3.3f);
 
         }
 
@@ -132,6 +162,8 @@ public class PlayerMovement : MonoBehaviour {
 
             if (percantageComplete >= 1.0f) {
                 isLerping = false;
+                playerAnim.SetTrigger("Land");
+
             }
 
         }
@@ -146,89 +178,113 @@ public class PlayerMovement : MonoBehaviour {
         }
 
 
-        if (CollisionManager.hitCountdown > 0) {
+
+        if (Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.H) || Input.GetMouseButtonDown(0)) {
+
+            startMoving = true;
+        }
+
+
+        //When player activates bonus level dont allow movement
+        if (CollisionManager.bonusLevelActive) {
+            Debug.Log("BONUS LEVEL ACTIVATED");
             return;
-        } else {
-
-
-
-            if (Input.GetKeyDown(KeyCode.G) || Input.GetKeyDown(KeyCode.H) || Input.GetMouseButtonDown(0)) {
-
-                startMoving = true;
-            }
-
-
-            //When player activates bonus level dont allow movement
-            if (CollisionManager.bonusLevelActive) {
-                Debug.Log("BONUS LEVEL ACTIVATED");
-                return;
-            }
+        }
 
 
 
 #if UNITY_WEBGL
+        if (Input.GetKeyDown(KeyCode.Space) && grounded) {
 
-            if (Input.GetKeyDown(KeyCode.Space) && grounded) {
-
-                Jump();
-
+            if (lastJumpCountdown > 0) {
+                return;
             }
+            Jump();
 
-            if (Input.GetKeyDown(KeyCode.G) && keyAlternate == false) {
+        }
+
+        if (CollisionManager.captured) {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.G) && keyAlternate == false) {
 
 
-                StartLerping(Vector3.right, 1f);
-                jumpCountdown = 2;
+            StartLerping(Vector3.right, 1f);
+            jumpCountdown = 2;
+            playerAnim.SetTrigger("Walk");
+            timeTakenDuringLerp = 0.1f;
 
-                keyAlternate = true;
+            keyAlternate = true;
 
-            } else if (Input.GetKeyDown(KeyCode.H) && keyAlternate == true) {
+        } else if (Input.GetKeyDown(KeyCode.H) && keyAlternate == true) {
 
-                StartLerping(Vector3.right, 0.85f);
-                jumpCountdown = 2;
+            StartLerping(Vector3.right, 0.85f);
+            jumpCountdown = 2;
+            playerAnim.SetTrigger("Walk");
+            timeTakenDuringLerp = 0.1f;
 
-                keyAlternate = false;
-            }
+            keyAlternate = false;
+        }
+
 #endif
-
 
 
 #if UNITY_ANDROID
 
 
-            if (Input.GetMouseButtonDown(0)) {
 
-                //Origin point
-                firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        if (Input.GetMouseButtonDown(0)) {
 
-                StartLerping(Vector3.right, 1f);
+            //Origin point
+            firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+
+            if (CollisionManager.captured) {
+                return;
+            }
+
+            playerAnim.SetTrigger("Walk");
+            StartLerping(Vector3.right, 1.1f);
+
+        }
+
+        if (Input.GetMouseButtonUp(0)) {
+
+            //Destination point
+            secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+
+
+            //create vector from the two points
+            currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+
+
+
+            if (currentSwipe.x <= 10 && currentSwipe.y <= 10) {
+
+                jumpCountdown = 2;
+            }
+
+            if (currentSwipe.y >= 80) {
+
+                if (lastJumpCountdown > 0) {
+                    return;
+                }
+
+                if (CollisionManager.captured) {
+                    CollisionManager.hitCountdown = 0;
+                    CollisionManager.captured = false;
+
+                }
+                Jump();
+                mobileJump = true;
 
             }
 
-            if (Input.GetMouseButtonUp(0)) {
-
-                //Destination point
-                secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 
 
-                //create vector from the two points
-                currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+        }
 
 
-                if (currentSwipe.x <= 10 && currentSwipe.y <= 10) {
-
-                    jumpCountdown = 2;
-                }
-
-                //currentSwipe.Normalize();
-
-                if (currentSwipe.y >= 80) {
-
-                    Jump();
-
-
-                }
-            }
 
 
 
@@ -237,45 +293,9 @@ public class PlayerMovement : MonoBehaviour {
 #if UNITY_IOS
 
 
-                  if (Input.GetMouseButtonDown(0)) {
-
-                //Origin point
-                firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-
-                StartLerping(Vector3.right, 1f);
-
-            }
-
-            if (Input.GetMouseButtonUp(0)) {
-
-                //Destination point
-                secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-
-
-                //create vector from the two points
-                currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-
-
-                if (currentSwipe.x <= 10 && currentSwipe.y <= 10) {
-
-                    jumpCountdown = 2;
-                }
-
-                //currentSwipe.Normalize();
-
-                if (currentSwipe.y >= 80) {
-
-                    Jump();
-
-
-                }
-            }
-
       
 
 #endif
 
-
-        }
     }
 }

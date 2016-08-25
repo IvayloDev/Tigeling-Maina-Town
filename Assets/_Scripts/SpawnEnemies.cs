@@ -4,9 +4,9 @@ using System.Collections;
 public class SpawnEnemies : MonoBehaviour {
 
 
-    public GameObject playerGO;
     public Vector3 FirstCheckpoint, SecondCheckpoint, ThirdCheckpoint, ForthCheckpoint;
 
+    public Vector3 startSpawnPoint;
 
     void Start() {
 
@@ -23,15 +23,15 @@ public class SpawnEnemies : MonoBehaviour {
         SpawnRewardLevel3();
         SpawnEnemyLevel3();
 
-        //SpawnRewardLevel4();
-        //SpawnEnemyLevel4();
+        SpawnRewardLevel4();
+        SpawnEnemyLevel4();
 
 
     }
 
     void SpawnEnemyLevel0() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(16, 20);
 
@@ -42,14 +42,13 @@ public class SpawnEnemies : MonoBehaviour {
     }
     void SpawnRewardLevel0() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(21, 27);
 
         for (int i = 0; i < Random.Range(3, 6); i++) {
 
             targetVector.x += 3;
-            playerGO.transform.position = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector,
@@ -59,14 +58,14 @@ public class SpawnEnemies : MonoBehaviour {
 
     void SpawnRewardLevel1() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(90, 100);
 
         for (int i = 0; i < Random.Range(3, 6); i++) {
 
             targetVector.x += 4;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector,
@@ -76,28 +75,28 @@ public class SpawnEnemies : MonoBehaviour {
 
     void SpawnRewardLevel2() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(170, 175);
 
         for (int i = 0; i < Random.Range(3, 5); i++) {
 
             targetVector.x += 3;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector,
                 Quaternion.identity) as GameObject;
         }
 
-        Vector3 targetVector2 = playerGO.transform.position;
+        Vector3 targetVector2 = startSpawnPoint;
 
         targetVector2.x = Random.Range(220, 230);
 
         for (int i = 0; i < Random.Range(4, 6); i++) {
 
             targetVector2.x += 3;
-            playerGO.transform.position = targetVector2;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy2 = Instantiate(Resources.Load("Reward"),
                 targetVector2,
@@ -106,14 +105,14 @@ public class SpawnEnemies : MonoBehaviour {
     }
     void SpawnEnemyLevel2() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(185, 195);
 
         for (int i = 0; i < Random.Range(3, 5); i++) {
 
             targetVector.x += 9;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
                 targetVector,
@@ -124,14 +123,14 @@ public class SpawnEnemies : MonoBehaviour {
 
     void SpawnRewardLevel3() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(270, 285);
 
         for (int i = 0; i < Random.Range(3, 5); i++) {
 
             targetVector.x += 4f;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector,
@@ -139,14 +138,14 @@ public class SpawnEnemies : MonoBehaviour {
         }
 
 
-        Vector3 targetVector2 = playerGO.transform.position;
+        Vector3 targetVector2 = startSpawnPoint;
 
         targetVector2.x = Random.Range(330, 335);
 
         for (int i = 0; i < Random.Range(2, 4); i++) {
 
             targetVector2.x += 2f;
-            playerGO.transform.position = targetVector2;
+            startSpawnPoint = targetVector2;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector2,
@@ -157,32 +156,32 @@ public class SpawnEnemies : MonoBehaviour {
     void SpawnEnemyLevel3() {
 
 
-        Vector3 targetVector2 = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
-        targetVector2.x = Random.Range(300, 310);
+        targetVector.x = Random.Range(300, 310);
 
 
         for (int i = 0; i < Random.Range(2, 4); i++) {
 
-            targetVector2.x += 8;
-            playerGO.transform.position = targetVector2;
+            targetVector.x += 8;
+            startSpawnPoint = targetVector;
 
-            GameObject myEnemy2 = Instantiate(Resources.Load("Enemy"),
-                targetVector2,
+            GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
+                targetVector,
                 Quaternion.identity) as GameObject;
         }
     }
 
     void SpawnEnemyLevel4() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(375, 380);
 
         for (int i = 0; i < Random.Range(3, 6); i++) {
 
             targetVector.x += 7;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
                 targetVector,
@@ -191,14 +190,14 @@ public class SpawnEnemies : MonoBehaviour {
     }
     void SpawnRewardLevel4() {
 
-        Vector3 targetVector = playerGO.transform.position;
+        Vector3 targetVector = startSpawnPoint;
 
         targetVector.x = Random.Range(395, 405);
 
         for (int i = 0; i < Random.Range(4, 8); i++) {
 
             targetVector.x += 1.5f;
-            playerGO.transform.position = targetVector;
+            startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Reward"),
                 targetVector,
@@ -206,8 +205,4 @@ public class SpawnEnemies : MonoBehaviour {
         }
     }
 
-
-    void Update() {
-
-    }
 }
