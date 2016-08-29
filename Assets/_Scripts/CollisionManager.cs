@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CollisionManager : MonoBehaviour {
 
@@ -10,26 +11,15 @@ public class CollisionManager : MonoBehaviour {
 
     public static bool bonusLevelActive = false;
 
-    public static bool captured;
-
     public cameraShake camShake;
 
-    [SerializeField]
-    private PlayerMovement playerMovement;
-
     void Update() {
+
 
         if (hitCountdown > 0) {
             hitCountdown -= Time.deltaTime;
         }
 
-        if (captured) {
-
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                hitCountdown = 0;
-                captured = false;
-            }
-        }
 
     }
 
@@ -40,12 +30,9 @@ public class CollisionManager : MonoBehaviour {
             PlayerMovement.Score += 10;
             Destroy(col.gameObject, 0.3f);
 
-            if (Input.GetKeyDown(KeyCode.Space) || PlayerMovement.mobileJump) {
-                Debug.Log("logged");
+            if (Input.GetKeyDown(KeyCode.Space)) {
 
-                playerMovement.timeTakenDuringLerp = 0.3f;
-                playerMovement.StartLerping(new Vector3(0.5f, 0.5f, 0), 5f);
-                PlayerMovement.mobileJump = false;
+                PlayerMovement.shortJump = true;
 
             }
 
@@ -67,6 +54,8 @@ public class CollisionManager : MonoBehaviour {
 
             // Do stuff for round 1
             AddRound();
+            SceneManager.LoadScene(2);
+
             //bonusLevelActive = true;
         }
 
@@ -93,6 +82,8 @@ public class CollisionManager : MonoBehaviour {
 
         if (col.tag == "Check3") {
             AddRound();
+            SceneManager.LoadScene(3);
+
             //bonusLevelActive = true;
 
         }
@@ -118,11 +109,9 @@ public class CollisionManager : MonoBehaviour {
 
         if (col.tag == "Enemy") {
             //flash screen and slow down player
-            captured = true;
             camShake.shake_intensity = 0.3f;
             camShake.Shake();
             hitCountdown = 15;
-            return;
 
 
 
