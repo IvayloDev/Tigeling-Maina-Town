@@ -25,6 +25,10 @@ public class StatueScript : MonoBehaviour {
 
     void Update() {
 
+        if (FindObjectsOfType<StatueScript>().Length > 1) {
+            Destroy(FindObjectsOfType<StatueScript>()[0].gameObject);
+        }
+
         if (this.isActiveAndEnabled) {
             transform.Translate((Vector3.right * runSpeed) * Time.deltaTime);
         }

@@ -22,6 +22,10 @@ public class StefchoScript : MonoBehaviour {
 
     void Update() {
 
+        if (FindObjectsOfType<StefchoScript>().Length > 1) {
+            Destroy(FindObjectsOfType<StefchoScript>()[0].gameObject);
+        }
+
         if (this.isActiveAndEnabled) {
             transform.Translate((Vector3.right * runSpeed) * Time.deltaTime);
         }

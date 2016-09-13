@@ -13,10 +13,10 @@ public class Scroll : MonoBehaviour {
     public Vector3 BuildingsPos;
     public Vector3 PeopleFrontPos, PeopleBackPos;
 
+    private int r;
+    private Sprite tmp;
 
     void Start() {
-
-        //Generate Terain
 
 
         //Buildings
@@ -28,15 +28,36 @@ public class Scroll : MonoBehaviour {
 
     }
 
+
     void SpawnBuildings() {
+
+        for (int i = BuildingsSprites.Length - 1; i > 0; i--) {              // get the count of the array an shuffle all the elements   begin from end to start of the array 
+            r = Random.Range(0, i);         //	get a random number from 0 to array count
+            tmp = BuildingsSprites[i];                                              //	swap the random place (eg: 3) and assign it to tmp 
+            BuildingsSprites[i] = BuildingsSprites[r];          // swap the i(current number) with tmp
+            BuildingsSprites[r] = tmp;                                              // swap the tmp with the value of i
+        }
+
 
         float prevWidth = 1;
 
         Vector3 nextPos = BuildingsPos;
 
-        for (int i = 0; i < 140; i++) {
+        for (int i = 0; i < 110; i++) {
 
-            Sprite sprite = BuildingsSprites[Random.Range(0, 5)];
+            if (r >= BuildingsSprites.Length) {
+                for (int j = BuildingsSprites.Length - 1; j > 0; j--) {              // get the count of the array an shuffle all the elements   begin from end to start of the array 
+                    r = Random.Range(0, j);         //	get a random number from 0 to array count
+                    tmp = BuildingsSprites[j];                                              //	swap the random place (eg: 3) and assign it to tmp 
+                    BuildingsSprites[j] = BuildingsSprites[r];          // swap the i(current number) with tmp
+                    BuildingsSprites[r] = tmp;                                              // swap the tmp with the value of i
+                }
+            }
+
+            Sprite sprite = BuildingsSprites[r++];
+
+            //Sprite sprite = BuildingsSprites[Random.Range(0, 5)];
+
             float currentWidth = sprite.bounds.size.x;
 
             nextPos += new Vector3(currentWidth / 2 + prevWidth / 2, 0, 0);
@@ -58,7 +79,7 @@ public class Scroll : MonoBehaviour {
         Vector3 nextPos = PeopleBackPos;
 
         //Front
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 110; i++) {
 
             Sprite sprite = PeopleBackSprites[Random.Range(0, 7)];
 
@@ -75,7 +96,7 @@ public class Scroll : MonoBehaviour {
         nextPos = PeopleFrontPos;
 
         //Back
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 110; i++) {
 
             Sprite sprite = PeopleFrontSprites[Random.Range(0, 7)];
 
@@ -95,14 +116,12 @@ public class Scroll : MonoBehaviour {
 
         if (PlayerMovement.startMoving && !PlayerMovement.isDead) {
 
-            if (!CollisionManager.bonusLevelActive) {
-                ScrollObject(TreesHolder, 0.045f);
-                ScrollObject(LampsHolder, 0.045f);
-                ScrollObject(ParentForSpawnedPeopleFront, 0.025f);
-                ScrollObject(ParentForSpawnedPeopleBack, 0.042f);
-                ScrollObject(ParentForSpawnedBuilding, 0.05f);
+            ScrollObject(TreesHolder, 0.025f);
+            ScrollObject(LampsHolder, 0.025f);
+            ScrollObject(ParentForSpawnedPeopleFront, 0.00f);
+            ScrollObject(ParentForSpawnedPeopleBack, 0.022f);
+            ScrollObject(ParentForSpawnedBuilding, 0.055f);
 
-            }
         }
 
     }

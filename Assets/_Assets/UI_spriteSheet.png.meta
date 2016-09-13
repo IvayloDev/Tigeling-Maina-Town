@@ -72,13 +72,16 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 140
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: UI_spriteSheet_4
+    - serializedVersion: 2
+      name: UI_spriteSheet_4
       rect:
         serializedVersion: 2
         x: 11
@@ -88,26 +91,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 89, y: 41.5}
-        - {x: 88, y: 40.5}
-        - {x: 21, y: 41.5}
-        - {x: -212, y: 41.5}
-        - {x: -213, y: 40.5}
-        - {x: -213, y: -40.5}
-        - {x: -212, y: -41.5}
-        - {x: 222, y: -41.5}
-        - {x: 222, y: 40.5}
-        - {x: 221, y: 41.5}
-      - - {x: -282, y: 14.5}
-        - {x: -282, y: -14.5}
-        - {x: -218, y: -14.5}
-        - {x: -218, y: 14.5}
-      - - {x: 227, y: 14.5}
-        - {x: 227, y: -14.5}
-        - {x: 282, y: -14.5}
-        - {x: 282, y: 14.5}
-    - name: UI_spriteSheet_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_7
       rect:
         serializedVersion: 2
         x: 99
@@ -118,7 +105,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: UI_spriteSheet_15
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_15
       rect:
         serializedVersion: 2
         x: 2141
@@ -128,16 +117,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -22, y: 29}
-        - {x: -29, y: 21}
-        - {x: -29, y: -23}
-        - {x: -26, y: -29}
-        - {x: 20, y: -29}
-        - {x: 29, y: -25}
-        - {x: 29, y: 25}
-        - {x: 17, y: 29}
-    - name: UI_spriteSheet_20
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_20
       rect:
         serializedVersion: 2
         x: 113
@@ -147,47 +130,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -59.5, y: -10}
-        - {x: -59.5, y: -22}
-        - {x: -46.5, y: -22}
-        - {x: -46.5, y: -10}
-      - - {x: 49.5, y: -10}
-        - {x: 47.5, y: -12}
-        - {x: 47.5, y: -21}
-        - {x: 48.5, y: -22}
-        - {x: 60.5, y: -22}
-        - {x: 61.5, y: -21}
-        - {x: 61.5, y: -12}
-        - {x: 59.5, y: -10}
-      - - {x: -34.5, y: 6}
-        - {x: -34.5, y: -22}
-        - {x: 37.5, y: -22}
-        - {x: 37.5, y: 5}
-        - {x: 36.5, y: 6}
-      - - {x: -68.5, y: 22}
-        - {x: -68.5, y: -6}
-        - {x: -40.5, y: -6}
-        - {x: -37.5, y: -2}
-        - {x: -37.5, y: 22}
-      - - {x: 39.5, y: 22}
-        - {x: 39.5, y: 1}
-        - {x: 41.5, y: -6}
-        - {x: 68.5, y: -6}
-        - {x: 68.5, y: 22}
-      - - {x: -34.5, y: 22}
-        - {x: -34.5, y: 7}
-        - {x: 3.5, y: 7}
-        - {x: 3.5, y: 22}
-      - - {x: 12.5, y: 22}
-        - {x: 12.5, y: 20}
-        - {x: 13.5, y: 18}
-        - {x: 15.5, y: 9}
-        - {x: 16.5, y: 7}
-        - {x: 34.5, y: 7}
-        - {x: 35.5, y: 9}
-        - {x: 35.5, y: 22}
-    - name: UI_spriteSheet_23
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_23
       rect:
         serializedVersion: 2
         x: 368
@@ -197,39 +143,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -38, y: -2}
-        - {x: -40, y: -4}
-        - {x: -42, y: -15}
-        - {x: -45, y: 2}
-        - {x: -18, y: 2}
-        - {x: -16, y: 4}
-        - {x: -16, y: 16}
-        - {x: -58, y: 16}
-        - {x: -58, y: -34}
-        - {x: -16, y: -34}
-        - {x: -16, y: 1}
-      - - {x: -14, y: 16}
-        - {x: -14, y: -34}
-        - {x: 19, y: -34}
-        - {x: 19, y: 16}
-      - - {x: 44, y: 16}
-        - {x: 26, y: 16}
-        - {x: 26, y: -34}
-        - {x: 42, y: -34}
-        - {x: 58, y: -18}
-        - {x: 58, y: 1}
-        - {x: 56, y: 12}
-      - - {x: -58, y: 34}
-        - {x: -58, y: 17}
-        - {x: -13, y: 17}
-        - {x: -13, y: 34}
-      - - {x: -4, y: 34}
-        - {x: -4, y: 26}
-        - {x: 0, y: 17}
-        - {x: 19, y: 17}
-        - {x: 19, y: 34}
-    - name: UI_spriteSheet_36
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_36
       rect:
         serializedVersion: 2
         x: 366
@@ -239,32 +156,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -56, y: -8.5}
-        - {x: -62, y: 17.5}
-        - {x: -23, y: 15.5}
-        - {x: -22, y: 19.5}
-        - {x: -22, y: 33.5}
-        - {x: -79, y: 33.5}
-        - {x: -80, y: 32.5}
-        - {x: -80, y: -33.5}
-        - {x: -22, y: -33.5}
-        - {x: -22, y: 10.5}
-        - {x: -57, y: 7.5}
-      - - {x: -17, y: 33.5}
-        - {x: -18, y: 32.5}
-        - {x: -18, y: -33.5}
-        - {x: 26, y: -33.5}
-        - {x: 26, y: 32.5}
-        - {x: 25, y: 33.5}
-      - - {x: 56, y: 33.5}
-        - {x: 37, y: 33.5}
-        - {x: 37, y: -33.5}
-        - {x: 55, y: -33.5}
-        - {x: 80, y: -13.5}
-        - {x: 80, y: 6.5}
-        - {x: 79, y: 10.5}
-    - name: UI_spriteSheet_37
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_37
       rect:
         serializedVersion: 2
         x: 2101
@@ -274,14 +169,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39.5, y: 39}
-        - {x: -62.5, y: 18}
-        - {x: -62.5, y: -35}
-        - {x: -58.5, y: -39}
-        - {x: 62.5, y: -39}
-        - {x: 62.5, y: 39}
-    - name: UI_spriteSheet_38
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_38
       rect:
         serializedVersion: 2
         x: 0
@@ -292,7 +183,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: UI_spriteSheet_41
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_41
       rect:
         serializedVersion: 2
         x: 112
@@ -302,47 +195,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -62.5, y: -11.5}
-        - {x: -62.5, y: -23.5}
-        - {x: -48.5, y: -23.5}
-        - {x: -48.5, y: -13.5}
-        - {x: -50.5, y: -11.5}
-      - - {x: -36.5, y: 5.5}
-        - {x: -36.5, y: -23.5}
-        - {x: 37.5, y: -23.5}
-        - {x: 38.5, y: -21.5}
-        - {x: 38.5, y: 5.5}
-      - - {x: 51.5, y: -11.5}
-        - {x: 49.5, y: -13.5}
-        - {x: 49.5, y: -22.5}
-        - {x: 50.5, y: -23.5}
-        - {x: 62.5, y: -23.5}
-        - {x: 63.5, y: -22.5}
-        - {x: 63.5, y: -13.5}
-        - {x: 61.5, y: -11.5}
-      - - {x: -40.5, y: 23.5}
-        - {x: -69.5, y: 23.5}
-        - {x: -69.5, y: -6.5}
-        - {x: -40.5, y: -6.5}
-        - {x: -39.5, y: -3.5}
-        - {x: -39.5, y: 22.5}
-      - - {x: 40.5, y: 23.5}
-        - {x: 40.5, y: 5.5}
-        - {x: 47.5, y: -6.5}
-        - {x: 69.5, y: -6.5}
-        - {x: 69.5, y: 23.5}
-      - - {x: -36.5, y: 23.5}
-        - {x: -36.5, y: 6.5}
-        - {x: 3.5, y: 6.5}
-        - {x: 3.5, y: 23.5}
-      - - {x: 13.5, y: 23.5}
-        - {x: 13.5, y: 18.5}
-        - {x: 16.5, y: 6.5}
-        - {x: 34.5, y: 6.5}
-        - {x: 36.5, y: 7.5}
-        - {x: 36.5, y: 23.5}
-    - name: UI_spriteSheet_45
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_45
       rect:
         serializedVersion: 2
         x: 124
@@ -352,50 +208,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -60.5, y: -12.5}
-        - {x: -60.5, y: -21.5}
-        - {x: -47.5, y: -21.5}
-        - {x: -47.5, y: -12.5}
-        - {x: -49.5, y: -10.5}
-        - {x: -58.5, y: -10.5}
-      - - {x: -35.5, y: 5.5}
-        - {x: -35.5, y: -21.5}
-        - {x: 36.5, y: -21.5}
-        - {x: 36.5, y: 4.5}
-        - {x: 35.5, y: 5.5}
-      - - {x: 46.5, y: -12.5}
-        - {x: 46.5, y: -21.5}
-        - {x: 60.5, y: -21.5}
-        - {x: 60.5, y: -12.5}
-        - {x: 58.5, y: -10.5}
-        - {x: 48.5, y: -10.5}
-      - - {x: -38.5, y: 20.5}
-        - {x: -39.5, y: 21.5}
-        - {x: -67.5, y: 21.5}
-        - {x: -67.5, y: -6.5}
-        - {x: -49.5, y: -6.5}
-        - {x: -47.5, y: -4.5}
-        - {x: -46.5, y: 5.5}
-        - {x: -38.5, y: 8.5}
-      - - {x: 38.5, y: 21.5}
-        - {x: 38.5, y: 5.5}
-        - {x: 44.5, y: -6.5}
-        - {x: 67.5, y: -6.5}
-        - {x: 67.5, y: 21.5}
-      - - {x: -35.5, y: 21.5}
-        - {x: -35.5, y: 6.5}
-        - {x: 2.5, y: 6.5}
-        - {x: 2.5, y: 21.5}
-      - - {x: 11.5, y: 21.5}
-        - {x: 11.5, y: 19.5}
-        - {x: 12.5, y: 17.5}
-        - {x: 14.5, y: 8.5}
-        - {x: 15.5, y: 6.5}
-        - {x: 33.5, y: 6.5}
-        - {x: 34.5, y: 8.5}
-        - {x: 34.5, y: 21.5}
-    - name: UI_spriteSheet_46
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_46
       rect:
         serializedVersion: 2
         x: 2078
@@ -405,14 +221,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -52, y: 39}
-        - {x: -86, y: 18}
-        - {x: -86, y: -35}
-        - {x: -82, y: -39}
-        - {x: 86, y: -39}
-        - {x: 86, y: 39}
-    - name: UI_spriteSheet_51
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_51
       rect:
         serializedVersion: 2
         x: 82
@@ -422,12 +234,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28.5, y: 31}
-        - {x: -28.5, y: -31}
-        - {x: 28.5, y: -31}
-        - {x: 28.5, y: 31}
-    - name: UI_spriteSheet_52
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_52
       rect:
         serializedVersion: 2
         x: 242
@@ -437,12 +247,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29, y: 31}
-        - {x: -29, y: -31}
-        - {x: 29, y: -31}
-        - {x: 29, y: 31}
-    - name: UI_spriteSheet_54
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_54
       rect:
         serializedVersion: 2
         x: 1873
@@ -452,27 +260,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -129.5, y: -45}
-        - {x: -40.5, y: -45}
-        - {x: -35.5, y: -39}
-        - {x: -35.5, y: 34}
-        - {x: -43.5, y: 36}
-        - {x: -283.5, y: 36}
-        - {x: -289.5, y: 32}
-        - {x: -289.5, y: -45}
-        - {x: -132.5, y: -45}
-        - {x: -132.5, y: -15}
-        - {x: -131.5, y: -36}
-      - - {x: 289.5, y: 38}
-        - {x: 256.5, y: 45}
-        - {x: 40.5, y: 45}
-        - {x: 14.5, y: 41}
-        - {x: 2.5, y: 32}
-        - {x: 2.5, y: -42}
-        - {x: 6.5, y: -45}
-        - {x: 289.5, y: -45}
-    - name: UI_spriteSheet_56
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_56
       rect:
         serializedVersion: 2
         x: 82
@@ -482,14 +273,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -28.5, y: 29}
-        - {x: -28.5, y: -27}
-        - {x: -26.5, y: -29}
-        - {x: 27.5, y: -29}
-        - {x: 28.5, y: -28}
-        - {x: 28.5, y: 29}
-    - name: UI_spriteSheet_57
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_57
       rect:
         serializedVersion: 2
         x: 242
@@ -499,14 +286,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -29, y: 29}
-        - {x: -29, y: -27}
-        - {x: -27, y: -29}
-        - {x: 27, y: -29}
-        - {x: 29, y: -28}
-        - {x: 29, y: 29}
-    - name: UI_spriteSheet_59
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_59
       rect:
         serializedVersion: 2
         x: 75
@@ -516,12 +299,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -116.5, y: 31.5}
-        - {x: -116.5, y: -31.5}
-        - {x: 116.5, y: -31.5}
-        - {x: 116.5, y: 31.5}
-    - name: UI_spriteSheet_61
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_61
       rect:
         serializedVersion: 2
         x: 75
@@ -531,13 +312,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -116.5, y: 28}
-        - {x: -116.5, y: -26}
-        - {x: -114.5, y: -28}
-        - {x: 116.5, y: -28}
-        - {x: 116.5, y: 28}
-    - name: UI_spriteSheet_62
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_62
       rect:
         serializedVersion: 2
         x: 1894
@@ -547,70 +325,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -191.5, y: -92}
-        - {x: -191.5, y: -231}
-        - {x: -161.5, y: -231}
-        - {x: -111.5, y: -214}
-        - {x: -111.5, y: -92}
-      - - {x: -91.5, y: -92}
-        - {x: -91.5, y: -231}
-        - {x: -61.5, y: -231}
-        - {x: -61.5, y: -92}
-      - - {x: -42.5, y: -92}
-        - {x: -42.5, y: -231}
-        - {x: 64.5, y: -231}
-        - {x: 64.5, y: -92}
-      - - {x: 162.5, y: -231}
-        - {x: 164.5, y: -229}
-        - {x: 164.5, y: -94}
-        - {x: 162.5, y: -92}
-        - {x: 137.5, y: -53}
-        - {x: 225.5, y: -54}
-        - {x: 263.5, y: -36}
-        - {x: 219.5, y: -194}
-        - {x: 222.5, y: -92}
-        - {x: 189.5, y: -89}
-        - {x: 186.5, y: -93}
-        - {x: 189.5, y: -231}
-        - {x: 272.5, y: -231}
-        - {x: 279.5, y: -214}
-        - {x: 279.5, y: 64}
-        - {x: 227.5, y: 81}
-        - {x: 105.5, y: 148}
-        - {x: 54.5, y: 203}
-        - {x: 37.5, y: 231}
-        - {x: 21.5, y: 231}
-        - {x: -62.5, y: 166}
-        - {x: -159.5, y: 123}
-        - {x: -230.5, y: 111}
-        - {x: -279.5, y: 104}
-        - {x: -279.5, y: -48}
-        - {x: -276.5, y: -139}
-        - {x: -274.5, y: -141}
-        - {x: -266.5, y: -141}
-        - {x: -264.5, y: -139}
-        - {x: -262.5, y: -6}
-        - {x: -209.5, y: -36}
-        - {x: -206.5, y: -116}
-        - {x: -233.5, y: -112}
-        - {x: -245.5, y: -121}
-        - {x: -240.5, y: -189}
-        - {x: -227.5, y: -229}
-        - {x: -196.5, y: -224}
-        - {x: -61.5, y: -37}
-        - {x: -60.5, y: -58}
-        - {x: 124.5, y: -55}
-        - {x: 125.5, y: -92}
-        - {x: 84.5, y: -92}
-        - {x: 82.5, y: -94}
-        - {x: 82.5, y: -229}
-        - {x: 84.5, y: -231}
-        - {x: 114.5, y: -231}
-        - {x: 132.5, y: -185}
-        - {x: 133.5, y: -229}
-        - {x: 135.5, y: -231}
-    - name: UI_spriteSheet_64
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_64
       rect:
         serializedVersion: 2
         x: 141
@@ -621,7 +339,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: UI_spriteSheet_66
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_66
       rect:
         serializedVersion: 2
         x: 163
@@ -632,7 +352,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: UI_spriteSheet_68
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_68
       rect:
         serializedVersion: 2
         x: 164
@@ -643,7 +365,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: UI_spriteSheet_0
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_0
       rect:
         serializedVersion: 2
         x: 225
@@ -653,22 +377,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -69, y: -20}
-        - {x: -69, y: -44}
-        - {x: -68, y: -48}
-        - {x: 69, y: -48}
-        - {x: 70, y: -47}
-        - {x: 70, y: -20}
-      - - {x: 0, y: 47}
-        - {x: -32, y: 47}
-        - {x: -37, y: 32}
-        - {x: -37, y: 14}
-        - {x: -29, y: 0}
-        - {x: 38, y: 0}
-        - {x: 38, y: 28}
-        - {x: 28, y: 43}
-    - name: UI_spriteSheet_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_spriteSheet_1
       rect:
         serializedVersion: 2
         x: 889
@@ -678,70 +390,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 395, y: -208}
-        - {x: 395, y: -125}
-        - {x: 391, y: -124}
-        - {x: 336, y: -110}
-        - {x: 317, y: -100}
-        - {x: 393, y: -100}
-        - {x: 395, y: -98}
-        - {x: 395, y: -73}
-        - {x: 391, y: -70}
-        - {x: 307, y: -62}
-        - {x: 93, y: -62}
-        - {x: 87, y: -138}
-        - {x: 64, y: -142}
-        - {x: 64, y: -72}
-        - {x: 57, y: -63}
-        - {x: 51, y: -62}
-        - {x: 24, y: -62}
-        - {x: -15, y: -142}
-        - {x: -15, y: -62}
-        - {x: -334, y: -62}
-        - {x: -394, y: -71}
-        - {x: -395, y: -74}
-        - {x: -395, y: -98}
-        - {x: -393, y: -100}
-        - {x: -372, y: -103}
-        - {x: -369, y: -208}
-      - - {x: -65, y: -39}
-        - {x: -62, y: -41}
-        - {x: 111, y: -41}
-        - {x: 126, y: -40}
-        - {x: 129, y: -35}
-        - {x: 145, y: -41}
-        - {x: 205, y: -41}
-        - {x: 205, y: 90}
-        - {x: 154, y: 177}
-        - {x: 117, y: 179}
-        - {x: 85, y: 177}
-        - {x: 63, y: 181}
-        - {x: 33, y: 176}
-        - {x: 27, y: 171}
-        - {x: 21, y: 124}
-        - {x: -12, y: 178}
-        - {x: -49, y: 179}
-        - {x: -51, y: 155}
-        - {x: -70, y: 208}
-        - {x: -95, y: 208}
-        - {x: -114, y: 166}
-        - {x: -122, y: 178}
-        - {x: -143, y: 208}
-        - {x: -162, y: 208}
-        - {x: -172, y: 190}
-        - {x: -201, y: 100}
-        - {x: -204, y: 88}
-        - {x: -204, y: 49}
-        - {x: -165, y: 29}
-        - {x: -145, y: 30}
-        - {x: -145, y: -35}
-        - {x: -143, y: -39}
-        - {x: -130, y: -41}
-        - {x: -98, y: -41}
-        - {x: -95, y: -38}
-        - {x: -67, y: 30}
-        - {x: -67, y: -34}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

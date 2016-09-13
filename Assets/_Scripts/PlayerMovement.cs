@@ -18,32 +18,52 @@ public class PlayerMovement : MonoBehaviour {
 
     private float jumpCountdown;
 
-    public static int Round, Score;
+    public static int Score = 0;
+    public static int Round = 1;
     public static int Lives = 3;
+
     private Vector3 fingerStart, fingerEnd;
 
     private Vector2 secondPressPos;
     private Vector2 currentSwipe;
     private Vector2 firstPressPos;
 
-
-
     public static bool shortJump;
     public static bool longJump;
+    public static bool headJump;
     public static bool addWalkForce;
     private float walkSpeed;
 
+    public Vector3 bonus1Pos, bonus2Pos, bonus3Pos;
 
     private Animator playerAnim;
+    public GameObject ScorePopUpPrefab;
     private Rigidbody2D rb;
+    public Sprite x30Sprite;
+    private Camera cam;
+
+    public GameObject parentForScorePopUp;
 
     void Start() {
+
+        cam = Camera.main;
+
+        if (CollisionManager.bonusLevelActive1) {
+            CollisionManager.bonusLevelActive1 = false;
+            cam.transform.position = new Vector3(bonus1Pos.x, 0, -10);
+
+        } else if (CollisionManager.bonusLevelActive2) {
+            CollisionManager.bonusLevelActive2 = false;
+            cam.transform.position = new Vector3(bonus2Pos.x, 0, -10);
+
+        }
+
 
         playerAnim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        Round = 1;
-        Score = 0;
+
+        CollisionManager.hitCountdown = 0;
 
         jumpCountdown = 0;
         lastJumpCountdown = 0;
@@ -63,16 +83,30 @@ public class PlayerMovement : MonoBehaviour {
     }
 
 
-    //Only for jump on enemy's head
-    void OnTriggerEnter2D(Collider2D col) {
-        if (col.tag == "Head") {
 
-            shortJump = true;
+    public void HeadJump(Collider2D col) {
 
-        }
+        GameObject jumpEffect = (GameObject)Instantiate(Resources.Load("HeadJumpEffect"),
+            new Vector3(col.transform.position.x, col.transform.position.y + 0.5f, -5), Quaternion.identity);
+        Destroy(jumpEffect, 1f);
+
+
+        headJump = true;
+
+        //add points and pop up "x30"
+        Score += 30;
+
+        ShowScorePopUp(x30Sprite);
+
     }
 
+    public void ShowScorePopUp(Sprite sprite) {
 
+        GameObject scorePopUp = (GameObject)Instantiate(ScorePopUpPrefab, new Vector2(0, 0), Quaternion.identity, parentForScorePopUp.transform);
+        scorePopUp.GetComponent<SpriteRenderer>().sprite = sprite;
+        Destroy(scorePopUp, 1f);
+
+    }
 
     void Jump() {
 
@@ -82,11 +116,11 @@ public class PlayerMovement : MonoBehaviour {
 
         if (jumpCountdown >= 1.4f) {
             longJump = true;
-            lastJumpCountdown = 0.5f;
+            lastJumpCountdown = 0.7f;
 
         } else
             shortJump = true;
-        lastJumpCountdown = 0.5f;
+        lastJumpCountdown = 0.7f;
 
     }
 
@@ -101,10 +135,19 @@ public class PlayerMovement : MonoBehaviour {
 
             if (Lives < 0) {
                 //END SCENE
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(4);
 
             } else {
+
+                if (transform.position.x > 65) {
+                    CollisionManager.bonusLevelActive1 = true;
+                } else if (transform.position.x > 165) {
+                    CollisionManager.bonusLevelActive2 = true;
+                }
+
+
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                Score = 0;
                 isDead = true;
             }
         }
@@ -113,7 +156,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void CheckIfGrounded() {
 
-        if (transform.position.y <= -3.25) {
+        if (transform.position.y <= -2.4) {
 
             playerAnim.SetTrigger("Land");
             grounded = true;
@@ -123,27 +166,42 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate() {
 
+
         if (addWalkForce) {
 
+            rb.drag = 25;
             rb.AddForce(Vector2.right * walkSpeed, ForceMode2D.Impulse);
-
             addWalkForce = false;
+
         }
+
+        if (headJump) {
+
+            rb.AddForce(new Vector2(5, 20), ForceMode2D.Impulse);
+            headJump = false;
+
+        }
+
 
         if (shortJump) {
 
-            lastJumpCountdown = 0.8f;
+            rb.drag = 2;
+            lastJumpCountdown = 1f;
             CollisionManager.hitCountdown = 0;
-            rb.AddForce(new Vector2(30, 50), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(7, 25);
+            //rb.AddForce(new Vector2(8, 25), ForceMode2D.Impulse);
             shortJump = false;
 
         }
 
         if (longJump) {
 
-            lastJumpCountdown = 0.8f;
+
+            rb.drag = 2;
+            lastJumpCountdown = 1f;
             CollisionManager.hitCountdown = 0;
-            rb.AddForce(new Vector2(40, 50), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(13, 25);
+            //rb.AddForce(new Vector2(10, 25), ForceMode2D.Impulse);
             longJump = false;
 
         }
@@ -152,18 +210,16 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update() {
 
-        // Maybe Check if player has jumped too high duo to jump + autojump
-        // From head collision and after curtain height set gravity to high
+        if (!grounded) {
+            rb.drag = 2;
+        }
 
-        if (transform.position.y > -0.8f) {
-            rb.gravityScale = 250f;
-        } else rb.gravityScale = 15f;
-
-
+        if (rb.velocity.x <= 0) {
+            playerAnim.SetBool("Walk", false);
+        }
 
         if (jumpCountdown > 0) {
             jumpCountdown -= Time.deltaTime;
-
         }
 
         if (lastJumpCountdown > 0) {
@@ -202,21 +258,23 @@ public class PlayerMovement : MonoBehaviour {
 
 
         //When player activates bonus level dont allow movement
-        if (CollisionManager.bonusLevelActive) {
-            Debug.Log("BONUS LEVEL ACTIVATED");
-            return;
-        }
+        //if (CollisionManager.bonusLevelActive) {
+        //    Debug.Log("BONUS LEVEL ACTIVATED");
+        //    return;
+        //}
 
 
 
         // For Linux, PC, Mac
 #if UNITY_STANDALONE
+
         if (Input.GetKeyDown(KeyCode.Space) && grounded) {
 
             if (lastJumpCountdown > 0) {
                 return;
             }
             Jump();
+            playerAnim.SetBool("Walk", false);
 
         }
 
@@ -228,8 +286,8 @@ public class PlayerMovement : MonoBehaviour {
 
                 addWalkForce = true;
 
-                walkSpeed = 17f;
-                playerAnim.SetTrigger("Walk");
+                walkSpeed = 6;
+                playerAnim.SetBool("Walk", true);
                 jumpCountdown = 2;
 
 
@@ -243,11 +301,12 @@ public class PlayerMovement : MonoBehaviour {
 
                 addWalkForce = true;
 
+                walkSpeed = 6;
+
                 jumpCountdown = 2;
 
-                walkSpeed = 17f;
 
-                playerAnim.SetTrigger("Walk");
+                playerAnim.SetBool("Walk", true);
 
                 keyAlternate = false;
 
@@ -265,6 +324,7 @@ public class PlayerMovement : MonoBehaviour {
                 return;
             }
             Jump();
+            playerAnim.SetBool("Walk", false);
 
         }
 
@@ -276,8 +336,10 @@ public class PlayerMovement : MonoBehaviour {
 
                 addWalkForce = true;
 
-                walkSpeed = 17f;
-                playerAnim.SetTrigger("Walk");
+                //walkSpeed = 5;
+                walkSpeed = 19;
+
+                playerAnim.SetBool("Walk", true);
                 jumpCountdown = 2;
 
 
@@ -293,9 +355,10 @@ public class PlayerMovement : MonoBehaviour {
 
                 jumpCountdown = 2;
 
-                walkSpeed = 17f;
+                //walkSpeed = 4.6f;
+                walkSpeed = 17;
 
-                playerAnim.SetTrigger("Walk");
+                playerAnim.SetBool("Walk", true);
 
                 keyAlternate = false;
 
@@ -317,7 +380,7 @@ public class PlayerMovement : MonoBehaviour {
 
             if (CollisionManager.hitCountdown <= 0) {
 
-                walkSpeed = 23f;
+                walkSpeed = 7f;
                 playerAnim.SetTrigger("Walk");
                 addWalkForce = true;
                 jumpCountdown = 2;

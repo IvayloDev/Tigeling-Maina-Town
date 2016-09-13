@@ -18,10 +18,10 @@ public class CameraMovement : MonoBehaviour {
         PlayerScreenPos = cam.WorldToScreenPoint(Player.transform.position);
 
         //Cannot run after this(limit max X position)
-        if (PlayerScreenPos.x > Screen.width / 1.3f) {
+        if (PlayerScreenPos.x > Screen.width / 1.5f) {
             maxReached = true;
 
-        } else if (PlayerScreenPos.x < Screen.width / 1.3f) {
+        } else if (PlayerScreenPos.x < Screen.width / 1.5f) {
             maxReached = false;
         }
     }
@@ -60,14 +60,13 @@ public class CameraMovement : MonoBehaviour {
 
     void Update() {
 
+
         CheckingPosition();
 
 
         if (!PlayerMovement.isDead && PlayerMovement.startMoving) {
 
-            if (!CollisionManager.bonusLevelActive) {
-                TranslateCamera();
-            }
+            TranslateCamera();
         }
     }
 }
