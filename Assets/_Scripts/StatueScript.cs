@@ -9,21 +9,43 @@ public class StatueScript : MonoBehaviour {
 
     private float runSpeed;
     public static bool statueFinished;
+    private Animator statueAnim;
+
+    void OnTriggerEnter2D(Collider2D col) {
+
+        if (col.tag == "WhoWon2") {
+            statueFinished = true;
+        }
+    }
 
 
     void OnEnable() {
         //use this as start
+
+        statueAnim = GetComponent<Animator>();
+
         statueFinished = false;
+
+        StartCoroutine(WarningStatue());
 
         Debug.LogError("Statue Enabled");
 
         StartCoroutine(startRunning(runSpeed));
-
+        StartCoroutine(Audio());
         //Start running fast. when in frame slow down. dont interact with player
         // if go with tag stefcho wins- say fail and lives--
     }
 
+    IEnumerator Audio() {
+
+        yield return new WaitForSeconds(0.3f);
+
+        AudioManager.instance.PlaySound("Statue");
+    }
+
     void Update() {
+
+        statueAnim.speed = runSpeed / 4;
 
         if (FindObjectsOfType<StatueScript>().Length > 1) {
             Destroy(FindObjectsOfType<StatueScript>()[0].gameObject);
@@ -35,20 +57,14 @@ public class StatueScript : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter2D(Collider2D col) {
+    IEnumerator WarningStatue() {
 
-        if (col.tag == "Check2") {
+        yield return new WaitForSeconds(0.3f);
 
-            statueFinished = true;
-
-            DestroyObject(this.gameObject, 2f);
-
-        }
-
+        FindObjectOfType<PlayerMovement>().StartAnimation.SetTrigger("WarningStatue");
     }
 
     IEnumerator startRunning(float _runningSpeed) {
-
 
         runSpeed = 8;
 
@@ -63,6 +79,10 @@ public class StatueScript : MonoBehaviour {
         yield return new WaitForSeconds(2f);
 
         runSpeed = Random.Range(5.2f, 5.3f);
+
+        yield return new WaitForSeconds(3f);
+
+        runSpeed = Random.Range(5.2f, 5.9f);
 
     }
 

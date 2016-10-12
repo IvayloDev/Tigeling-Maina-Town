@@ -14,6 +14,8 @@ public class cameraShake : MonoBehaviour {
         if (shake_intensity > 0) {
             transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
             shake_intensity -= shake_decay;
+        } else {
+            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, 0, -10);
         }
     }
 

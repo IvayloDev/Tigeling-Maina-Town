@@ -13,17 +13,14 @@ public class SpawnEnemies : MonoBehaviour {
 
         //method --> submethods for different enemies
 
-        SpawnRewardLevel0();
         SpawnEnemyLevel0();
+        SpawnRewardLevel0();
 
         SpawnRewardLevel1();
+        SpawnEnemyLevel1();
 
         SpawnRewardLevel2();
         SpawnEnemyLevel2();
-
-        SpawnRewardLevel3();
-        SpawnEnemyLevel3();
-
 
     }
 
@@ -31,7 +28,7 @@ public class SpawnEnemies : MonoBehaviour {
 
         Vector3 targetVector = startSpawnPoint;
 
-        targetVector.x = Random.Range(16, 20);
+        targetVector.x = Random.Range(30, 30);
 
         GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
             targetVector,
@@ -39,28 +36,45 @@ public class SpawnEnemies : MonoBehaviour {
         myEnemy.transform.parent = enemiesHolder.transform;
 
 
-        // ADDED FOR TESTING ONLY !
-        for (int i = 0; i < Random.Range(5, 15); i++) {
+        targetVector.x += 15;
 
-            targetVector.x += 9;
-            startSpawnPoint = targetVector;
+
+        for (int i = 0; i < Random.Range(2, 4); i++) {
+
+            targetVector.x += 6;
 
             GameObject myEnemy2 = Instantiate(Resources.Load("Enemy"),
-                targetVector,
-                Quaternion.identity) as GameObject;
+    targetVector,
+    Quaternion.identity) as GameObject;
             myEnemy2.transform.parent = enemiesHolder.transform;
 
         }
+
+        targetVector.x += 10;
+
+
+        for (int i = 0; i < Random.Range(2, 4); i++) {
+
+            targetVector.x += 2;
+
+            GameObject myEnemy2 = Instantiate(Resources.Load("Enemy"),
+    targetVector,
+    Quaternion.identity) as GameObject;
+            myEnemy2.transform.parent = enemiesHolder.transform;
+
+        }
+
     }
+
     void SpawnRewardLevel0() {
 
         Vector3 targetVector = startSpawnPoint;
 
-        targetVector.x = Random.Range(21, 27);
+        targetVector.x = Random.Range(14, 14);
 
         for (int i = 0; i < Random.Range(3, 6); i++) {
 
-            targetVector.x += 3;
+            targetVector.x += 2;
 
             GameObject myReward = Instantiate(Resources.Load("Reward"),
                 targetVector,
@@ -68,12 +82,30 @@ public class SpawnEnemies : MonoBehaviour {
             myReward.transform.parent = rewardsHolder.transform;
         }
 
-        targetVector.x += 10;
+        targetVector.x += 14;
 
-        GameObject myRewardTriangle = Instantiate(Resources.Load("Reward2"),
+
+        for (int i = 0; i < Random.Range(4, 7); i++) {
+
+            targetVector.x += 5;
+
+            GameObject myReward = Instantiate(Resources.Load("Reward"),
+                new Vector3(targetVector.x, 0.5f),
+                Quaternion.identity) as GameObject;
+            myReward.transform.parent = rewardsHolder.transform;
+        }
+
+        targetVector.x += 26;
+
+        for (int i = 0; i < Random.Range(3, 4); i++) {
+
+            targetVector.x += 1;
+
+            GameObject myReward = Instantiate(Resources.Load("Reward"),
                 targetVector,
                 Quaternion.identity) as GameObject;
-        myRewardTriangle.transform.parent = rewardsHolder.transform;
+            myReward.transform.parent = rewardsHolder.transform;
+        }
 
     }
 
@@ -81,9 +113,9 @@ public class SpawnEnemies : MonoBehaviour {
 
         Vector3 targetVector = startSpawnPoint;
 
-        targetVector.x = Random.Range(90, 100);
+        targetVector.x = Random.Range(115, 125);
 
-        for (int i = 0; i < Random.Range(3, 6); i++) {
+        for (int i = 0; i < Random.Range(2, 4); i++) {
 
             targetVector.x += 4;
             startSpawnPoint = targetVector;
@@ -93,49 +125,164 @@ public class SpawnEnemies : MonoBehaviour {
                 Quaternion.identity) as GameObject;
             myReward.transform.parent = rewardsHolder.transform;
         }
+
+        targetVector.x += 8;
+
+        GameObject myReward2 = Instantiate(Resources.Load("RewardBoost"),
+              targetVector,
+              Quaternion.identity) as GameObject;
+        myReward2.transform.parent = rewardsHolder.transform;
+
+        targetVector.x += 15;
+
+        for (int i = 0; i < Random.Range(2, 6); i++) {
+
+            targetVector.x += 2;
+            startSpawnPoint = targetVector;
+
+            GameObject myReward = Instantiate(Resources.Load("Reward"),
+                new Vector3(targetVector.x, 0.5f),
+                Quaternion.identity) as GameObject;
+            myReward.transform.parent = rewardsHolder.transform;
+        }
+
+
+
+        targetVector.x += 17;
+
+        GameObject myReward3 = Instantiate(Resources.Load("Reward2"),
+              targetVector,
+              Quaternion.identity) as GameObject;
+        myReward3.transform.parent = rewardsHolder.transform;
+
+
+        targetVector.x += 15;
+
+        GameObject myReward4 = Instantiate(Resources.Load("Reward"),
+              new Vector3(targetVector.x, 0.5f),
+              Quaternion.identity) as GameObject;
+        myReward4.transform.parent = rewardsHolder.transform;
+
+
     }
+
+
+    void SpawnEnemyLevel1() {
+
+        Vector3 targetVector = startSpawnPoint;
+
+        targetVector.x = Random.Range(135, 138);
+
+        for (int i = 0; i < Random.Range(2, 4); i++) {
+
+            targetVector.x += 4;
+
+            GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
+    targetVector,
+    Quaternion.identity) as GameObject;
+            myEnemy.transform.parent = enemiesHolder.transform;
+
+        }
+
+        targetVector.x += 25;
+
+        for (int i = 0; i < Random.Range(2, 8); i++) {
+
+            targetVector.x += 4;
+
+
+            GameObject myEnemy3 = Instantiate(Resources.Load("Enemy"),
+    targetVector,
+    Quaternion.identity) as GameObject;
+            myEnemy3.transform.parent = enemiesHolder.transform;
+
+        }
+
+        targetVector.x += 2;
+
+        GameObject myEnemy2 = Instantiate(Resources.Load("Enemy"),
+  targetVector,
+  Quaternion.identity) as GameObject;
+        myEnemy2.transform.parent = enemiesHolder.transform;
+
+
+    }
+
 
     void SpawnRewardLevel2() {
 
         Vector3 targetVector = startSpawnPoint;
 
-        targetVector.x = Random.Range(170, 175);
+        targetVector.x = Random.Range(223, 230);
 
-        for (int i = 0; i < Random.Range(3, 5); i++) {
+        GameObject myReward0 = Instantiate(Resources.Load("Reward"),
+                targetVector,
+                Quaternion.identity) as GameObject;
+        myReward0.transform.parent = rewardsHolder.transform;
+
+        for (int i = 0; i < Random.Range(1, 3); i++) {
+
+            targetVector.x += 12;
+            startSpawnPoint = targetVector;
+
+            GameObject myReward = Instantiate(Resources.Load("RewardBoost"),
+                targetVector,
+                Quaternion.identity) as GameObject;
+            myReward.transform.parent = rewardsHolder.transform;
+        }
+
+        targetVector.x += 5;
+
+
+        for (int i = 0; i < Random.Range(1, 3); i++) {
+
+            targetVector.x += 7;
+            startSpawnPoint = targetVector;
+
+            GameObject myReward = Instantiate(Resources.Load("Reward2"),
+                targetVector,
+                Quaternion.identity) as GameObject;
+            myReward.transform.parent = rewardsHolder.transform;
+        }
+
+        targetVector.x += 2;
+
+        for (int i = 0; i < Random.Range(3, 6); i++) {
 
             targetVector.x += 3;
             startSpawnPoint = targetVector;
 
             GameObject myReward = Instantiate(Resources.Load("Reward"),
-                targetVector,
+                new Vector3(targetVector.x, 0.5f),
                 Quaternion.identity) as GameObject;
             myReward.transform.parent = rewardsHolder.transform;
         }
-
-        Vector3 targetVector2 = startSpawnPoint;
-
-        targetVector2.x = Random.Range(220, 230);
-
-        for (int i = 0; i < Random.Range(4, 6); i++) {
-
-            targetVector2.x += 3;
-            startSpawnPoint = targetVector;
-
-            GameObject myReward2 = Instantiate(Resources.Load("Reward"),
-                targetVector2,
-                Quaternion.identity) as GameObject;
-            myReward2.transform.parent = rewardsHolder.transform;
-        }
     }
+
+
     void SpawnEnemyLevel2() {
 
         Vector3 targetVector = startSpawnPoint;
 
-        targetVector.x = Random.Range(185, 195);
+        targetVector.x = Random.Range(230, 231);
 
-        for (int i = 0; i < Random.Range(3, 5); i++) {
+        for (int i = 0; i < Random.Range(1, 3); i++) {
 
-            targetVector.x += 9;
+            targetVector.x += 2;
+            startSpawnPoint = targetVector;
+
+            GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
+                targetVector,
+                Quaternion.identity) as GameObject;
+            myEnemy.transform.parent = enemiesHolder.transform;
+        }
+
+        targetVector.x += 15;
+
+
+        for (int i = 0; i < Random.Range(4, 7); i++) {
+
+            targetVector.x += Random.Range(1, 4);
             startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
@@ -145,53 +292,11 @@ public class SpawnEnemies : MonoBehaviour {
 
         }
 
-    }
+        targetVector.x += 15;
 
-    void SpawnRewardLevel3() {
+        for (int i = 0; i < Random.Range(4, 7); i++) {
 
-        Vector3 targetVector = startSpawnPoint;
-
-        targetVector.x = Random.Range(270, 285);
-
-        for (int i = 0; i < Random.Range(3, 5); i++) {
-
-            targetVector.x += 4f;
-            startSpawnPoint = targetVector;
-
-            GameObject myReward = Instantiate(Resources.Load("Reward"),
-                targetVector,
-                Quaternion.identity) as GameObject;
-            myReward.transform.parent = rewardsHolder.transform;
-        }
-
-
-        Vector3 targetVector2 = startSpawnPoint;
-
-        targetVector2.x = Random.Range(330, 335);
-
-        for (int i = 0; i < Random.Range(2, 4); i++) {
-
-            targetVector2.x += 2f;
-            startSpawnPoint = targetVector2;
-
-            GameObject myReward = Instantiate(Resources.Load("Reward"),
-                targetVector2,
-                Quaternion.identity) as GameObject;
-            myReward.transform.parent = rewardsHolder.transform;
-        }
-
-    }
-    void SpawnEnemyLevel3() {
-
-
-        Vector3 targetVector = startSpawnPoint;
-
-        targetVector.x = Random.Range(300, 310);
-
-
-        for (int i = 0; i < Random.Range(2, 4); i++) {
-
-            targetVector.x += 8;
+            targetVector.x += Random.Range(3, 7);
             startSpawnPoint = targetVector;
 
             GameObject myEnemy = Instantiate(Resources.Load("Enemy"),
@@ -200,6 +305,7 @@ public class SpawnEnemies : MonoBehaviour {
             myEnemy.transform.parent = enemiesHolder.transform;
 
         }
-    }
 
+
+    }
 }

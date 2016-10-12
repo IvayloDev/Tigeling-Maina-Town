@@ -4,14 +4,14 @@ using System.Collections;
 public class Scroll : MonoBehaviour {
 
     public GameObject TreesHolder, LampsHolder, SpawnedObjectHolder;
-    public GameObject ParentForSpawnedPeopleFront, ParentForSpawnedPeopleBack, ParentForSpawnedBuilding;
+    public GameObject ParentForSpawnedPeopleFront, ParentForSpawnedPeopleBack, ParentForSpawnedPeopleBackSecond, ParentForSpawnedBuilding;
 
     public Sprite[] BuildingsSprites, PeopleFrontSprites, PeopleBackSprites;
 
 
 
     public Vector3 BuildingsPos;
-    public Vector3 PeopleFrontPos, PeopleBackPos;
+    public Vector3 PeopleFrontPos, PeopleFrontPos2, PeopleBackPos;
 
     private int r;
     private Sprite tmp;
@@ -79,7 +79,7 @@ public class Scroll : MonoBehaviour {
         Vector3 nextPos = PeopleBackPos;
 
         //Front
-        for (int i = 0; i < 110; i++) {
+        for (int i = 0; i < 70; i++) {
 
             Sprite sprite = PeopleBackSprites[Random.Range(0, 7)];
 
@@ -88,7 +88,7 @@ public class Scroll : MonoBehaviour {
             PeopleFront.GetComponent<SpriteRenderer>().sprite = sprite;
             PeopleFront.transform.parent = ParentForSpawnedPeopleFront.transform;
 
-            nextPos += new Vector3(3, 0, 0);
+            nextPos += new Vector3(4.8f, 0, 0);
 
         }
 
@@ -96,7 +96,7 @@ public class Scroll : MonoBehaviour {
         nextPos = PeopleFrontPos;
 
         //Back
-        for (int i = 0; i < 110; i++) {
+        for (int i = 0; i < 70; i++) {
 
             Sprite sprite = PeopleFrontSprites[Random.Range(0, 7)];
 
@@ -105,7 +105,22 @@ public class Scroll : MonoBehaviour {
             PeopleBack.GetComponent<SpriteRenderer>().sprite = sprite;
             PeopleBack.transform.parent = ParentForSpawnedPeopleBack.transform;
 
-            nextPos += new Vector3(3, 0, 0);
+            nextPos += new Vector3(4.8f, 0, 0);
+
+        }
+
+        nextPos = PeopleFrontPos2;
+
+        for (int i = 0; i < 70; i++) {
+
+            Sprite sprite = PeopleFrontSprites[Random.Range(0, 7)];
+
+            GameObject PeopleBack = (GameObject)Instantiate(SpawnedObjectHolder, nextPos, Quaternion.identity);
+
+            PeopleBack.GetComponent<SpriteRenderer>().sprite = sprite;
+            PeopleBack.transform.parent = ParentForSpawnedPeopleBackSecond.transform;
+
+            nextPos += new Vector3(4.8f, 0, 0);
 
         }
 
@@ -120,6 +135,7 @@ public class Scroll : MonoBehaviour {
             ScrollObject(LampsHolder, 0.025f);
             ScrollObject(ParentForSpawnedPeopleFront, 0.00f);
             ScrollObject(ParentForSpawnedPeopleBack, 0.022f);
+            ScrollObject(ParentForSpawnedPeopleBackSecond, 0.01f);
             ScrollObject(ParentForSpawnedBuilding, 0.055f);
 
         }

@@ -8,19 +8,41 @@ public class StefchoScript : MonoBehaviour {
     //script to  be activated
 
     private float runSpeed;
-
     public static bool stefchoFinished;
+    private Animator stefchoAnim;
+
+    IEnumerator WarningStefcho() {
+
+        yield return new WaitForSeconds(2);
+
+        FindObjectOfType<PlayerMovement>().StartAnimation.SetTrigger("WarningStefcho");
+    }
 
     void OnEnable() {
         //use this as start
+
+        StartCoroutine(WarningStefcho());
+
+        stefchoAnim = GetComponent<Animator>();
+
         stefchoFinished = false;
 
         Debug.LogError("Stefcho Enabled");
 
         StartCoroutine(startRunning(runSpeed));
+        StartCoroutine(Audio());
     }
 
+    IEnumerator Audio() {
+
+        yield return new WaitForSeconds(1.3f);
+
+        AudioManager.instance.PlaySound("Stefcho");
+
+    }
     void Update() {
+
+        stefchoAnim.speed = runSpeed;
 
         if (FindObjectsOfType<StefchoScript>().Length > 1) {
             Destroy(FindObjectsOfType<StefchoScript>()[0].gameObject);
@@ -40,21 +62,21 @@ public class StefchoScript : MonoBehaviour {
 
         runSpeed = Random.Range(3, 3.5f);
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         runSpeed = Random.Range(7.5f, 8.5f);
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         runSpeed = Random.Range(2, 3);
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
 
         runSpeed = Random.Range(6, 8);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
-        runSpeed = Random.Range(5.2f, 5.4f);
+        runSpeed = Random.Range(5.2f, 6.4f);
 
     }
 
@@ -62,14 +84,11 @@ public class StefchoScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
 
         if (col.tag == "Player") {
-            CollisionManager.hitCountdown = 0.3f;
+            GetComponent<Animator>().SetTrigger("Millions");
         }
-        if (col.tag == "Check4") {
 
+        if (col.tag == "WhoWon1") {
             stefchoFinished = true;
-
-            DestroyObject(this.gameObject, 2f);
-
         }
 
     }

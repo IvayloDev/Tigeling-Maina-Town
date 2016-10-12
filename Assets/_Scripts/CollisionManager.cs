@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CollisionManager : MonoBehaviour {
 
@@ -12,13 +13,15 @@ public class CollisionManager : MonoBehaviour {
 
     public static bool bonusLevelActive1, bonusLevelActive2;
 
-    bool rwd2, rwd3, rwd4;
-
     public Sprite x100Sprite, x10Sprite;
 
     public cameraShake camShake;
+    public Text BonusLevelIndexText;
 
-    //static CollisionManager instance;
+    public Animator StartAnimation;
+
+    public GameObject caughtAnimGO;
+    public GameObject LikeAnimPrefab;
 
     void Update() {
 
@@ -28,72 +31,94 @@ public class CollisionManager : MonoBehaviour {
 
     }
 
-    void Start() {
+    IEnumerator ArrowBoost() {
 
-        //if (instance != null) {
-        //    Destroy(this.gameObject);
-        //    return;
-        //}
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
 
-        //instance = this;
+        rb.gravityScale = 0;
 
+        CameraMovement.cameraMoveSpeed = 24;
 
+        transform.position = new Vector2(transform.position.x, 0.5f);
+        rb.velocity = new Vector2(25, 0);
+
+        yield return new WaitForSeconds(0.3f);
+
+        CameraMovement.cameraMoveSpeed = 5.2f;
+
+        rb.gravityScale = 9;
 
     }
 
     void Give10Likes(Collider2D col) {
 
-        Destroy(col.gameObject);
         PlayerMovement.Score += 10;
+        AudioManager.instance.PlaySound("Like");
 
+        GameObject LikeAnim = (GameObject)Instantiate(LikeAnimPrefab, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        LikeAnim.GetComponent<SpriteRenderer>().sortingOrder = 1;
+        Destroy(LikeAnim, 1f);
         FindObjectOfType<PlayerMovement>().ShowScorePopUp(x10Sprite);
+        Destroy(col.gameObject);
+
+        EndScreenScript._FinalLikes += 10;
 
     }
 
+    IEnumerator LoadBonus(int level) {
+
+        PlayerMovement.isDead = true;
+
+        FindObjectOfType<PlayerMovement>().blueScreenFadeInAnim.SetBool("ActivateBlueIn", true);
+        FindObjectOfType<PlayerMovement>().StartAnimation.SetTrigger("Transition");
+        BonusLevelIndexText.text = (level - 1).ToString();
+
+        yield return new WaitForSeconds(4.15f);
+
+        SceneManager.LoadScene(level);
+
+    }
 
     void OnTriggerEnter2D(Collider2D col) {
 
-        rwd2 = true;
+        if (col.tag == "TriggerSpaceAnim") {
+
+            FindObjectOfType<PlayerMovement>().StartAnimation.SetTrigger("ActivateSpace");
+
+        }
 
         if (col.tag == "Reward2") {
 
-            Give10Likes(col);
+            PlayerMovement.longJump = true;
+            PlayerMovement.Score += 100;
+            AudioManager.instance.PlaySound("100");
+            FindObjectOfType<PlayerMovement>().ShowScorePopUp(x100Sprite);
+            GustoMainaPopUp.SetTrigger("play");
 
+            FindObjectOfType<PlayerMovement>().playerAnim.SetTrigger("GustoMaina");
 
-            if (rwd2) {
-                rwd3 = true;
-            }
+            Destroy(col.gameObject);
 
+            EndScreenScript._FinalGustoMainas += 100;
         }
 
         if (col.tag == "Reward3") {
 
-            Give10Likes(col);
+            // Arrow hit, set Al Y to reward's Y, addforce x+
 
+            StartCoroutine(ArrowBoost());
 
-            if (rwd3) {
-                rwd4 = true;
-            }
+            PlayerMovement.Score += 100;
+            AudioManager.instance.PlaySound("100");
+            FindObjectOfType<PlayerMovement>().ShowScorePopUp(x100Sprite);
+            GustoMainaPopUp.SetTrigger("play");
 
+            FindObjectOfType<PlayerMovement>().playerAnim.SetTrigger("GustoMaina");
+
+            Destroy(col.gameObject);
+
+            EndScreenScript._FinalGustoMainas += 100;
         }
-        if (col.tag == "Reward4") {
-
-            Give10Likes(col);
-
-            if (rwd4) {
-                rwd2 = false;
-                rwd3 = false;
-                rwd4 = false;
-                PlayerMovement.Score += 70;
-
-                FindObjectOfType<PlayerMovement>().ShowScorePopUp(x100Sprite);
-                GustoMainaPopUp.SetTrigger("play");
-
-            }
-
-        }
-
-
 
         //if tag is ().. Flash screen and slow player
         if (col.tag == "Reward") {
@@ -105,104 +130,105 @@ public class CollisionManager : MonoBehaviour {
 
             // Do stuff for round 1
 
-            AddRound();
-
+            PlayerMovement.Round = 2;
+            AudioManager.instance.PlaySound("Bonus1Enter");
             bonusLevelActive1 = true;
             bonusLevelActive2 = false;
 
-            SceneManager.LoadScene(2);
-
-
+            StartCoroutine(LoadBonus(2));
 
         }
 
-        if (col.tag == "Check2") {
+        if (col.tag == "WhoWon1") {
+            if (StefchoScript.stefchoFinished) {
 
-            AddRound();
+                //failed to outrun statue.
+                Debug.LogError("failed to outrun stefcho");
 
-            SceneManager.LoadScene(3);
+                StartAnimation.SetTrigger("ActivateFailure");
 
-            bonusLevelActive1 = false;
-            bonusLevelActive2 = true;
+            } else {
+                //success
+                StartAnimation.SetTrigger("ActivateSuccess");
 
+                Debug.LogError("succeeded in outrunning stefcho");
+
+            }
+        }
+
+        if (col.tag == "WhoWon2") {
 
             if (StatueScript.statueFinished) {
 
                 //failed to outrun statue.
                 Debug.LogError("failed to outrun statue");
+                StartAnimation.SetTrigger("ActivateFailure");
+
             } else {
 
                 Debug.LogError("succeeded in outrunning statue");
-
                 //success
+                StartAnimation.SetTrigger("ActivateSuccess");
 
             }
+        }
 
-            //show bonus level + fail success screen
-            // Do stuff for round 2
+        if (col.tag == "Check2") {
+
+            PlayerMovement.Round = 3;
+            AudioManager.instance.PlaySound("Bonus2Enter");
+
+            bonusLevelActive1 = false;
+            bonusLevelActive2 = true;
+
+            StartCoroutine(LoadBonus(3));
 
         }
 
         if (col.tag == "Final") {
 
+            AudioManager.instance.PlaySound("End");
+
             SceneManager.LoadScene(4);
-
-            if (StefchoScript.stefchoFinished) {
-
-                //failed to outrun statue.
-                Debug.LogError("failed to outrun stefcho");
-            } else {
-
-                Debug.LogError("succeeded in outrunning stefcho");
-
-                //success
-
-            }
-
 
         }
 
         if (col.tag == "Enemy") {
 
+            AudioManager.instance.PlaySound("Enemy");
+            hitCountdown = 15;
             camShake.shake_intensity = 0.3f;
             camShake.Shake();
+            StartCoroutine(IsCaught());
         }
 
 
         if (col.tag == "StatueCheckPoint") {
 
-            statueSpawnPoint = new Vector3(Camera.main.transform.position.x - 10, -2.4f, -6);
+            statueSpawnPoint = new Vector3(Camera.main.transform.position.x - 10, -2.4f, -8);
 
             GameObject statue = Instantiate(Resources.Load("Statue"),
             statueSpawnPoint,
             Quaternion.identity) as GameObject;
-
         }
 
         if (col.tag == "StefchoCheckPoint") {
 
-            StefchoSpawnPoint = new Vector3(Camera.main.transform.position.x + 15, -2.4f, -6);
+            StefchoSpawnPoint = new Vector3(Camera.main.transform.position.x + 15, -1.4f, -8);
 
             GameObject stefcho = Instantiate(Resources.Load("Stefcho"),
             StefchoSpawnPoint,
             Quaternion.identity) as GameObject;
-
-        }
-
-    }
-
-    void OnTriggerStay2D(Collider2D col) {
-
-        if (col.tag == "Enemy") {
-
-            //flash screen and slow down player
-            hitCountdown = 15;
-
         }
     }
 
-    void AddRound() {
-        PlayerMovement.Round++;
-    }
+    IEnumerator IsCaught() {
+        caughtAnimGO.SetActive(true);
 
+        yield return new WaitForSeconds(0.6f);
+
+        caughtAnimGO.SetActive(false);
+        hitCountdown = 0;
+
+    }
 }

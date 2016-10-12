@@ -5,7 +5,7 @@ public class CameraMovement : MonoBehaviour {
 
     private Camera cam;
 
-    private float cameraMoveSpeed;
+    public static float cameraMoveSpeed;
 
     public GameObject Player;
 
@@ -16,6 +16,10 @@ public class CameraMovement : MonoBehaviour {
     void CheckingPosition() {
 
         PlayerScreenPos = cam.WorldToScreenPoint(Player.transform.position);
+
+        if (PlayerScreenPos.x > Screen.width / 1.2f) {
+            StartCoroutine("OffScreenCorrection");
+        }
 
         //Cannot run after this(limit max X position)
         if (PlayerScreenPos.x > Screen.width / 1.5f) {
@@ -29,6 +33,16 @@ public class CameraMovement : MonoBehaviour {
     void Awake() {
 
         cam = GetComponent<Camera>();
+
+    }
+
+    IEnumerator OffScreenCorrection() {
+
+        cameraMoveSpeed = 13f;
+
+        yield return new WaitForSeconds(0.4f);
+
+        cameraMoveSpeed = 5.2f;
 
     }
 
