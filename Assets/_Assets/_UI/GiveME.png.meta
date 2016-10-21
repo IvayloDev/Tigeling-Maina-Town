@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: baf301c7688dd0b45a52aa3b72e21295
+timeCreated: 1475948885
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GiveME_0
+    21300002: GiveME_1
+    21300004: GiveME_2
+    21300006: GiveME_3
+    21300008: GiveME_4
+    21300010: GiveME_5
+    21300012: GiveME_6
+    21300014: GiveME_7
+    21300016: GiveME_8
+    21300018: GiveME_9
+    21300020: GiveME_10
+    21300022: GiveME_11
+    21300024: GiveME_12
+    21300026: GiveME_13
+    21300028: GiveME_14
+    21300030: GiveME_15
+    21300032: GiveME_16
+    21300034: GiveME_17
+    21300036: GiveME_18
+    21300038: GiveME_19
+    21300040: GiveME_20
+    21300042: GiveME_21
+    21300044: GiveME_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GiveME_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 584
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_2
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 583
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_3
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 582
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 471
+        width: 256
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 471
+        width: 255
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_6
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 471
+        width: 255
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_7
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 471
+        width: 255
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_8
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 471
+        width: 255
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 300
+        width: 219
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 300
+        width: 219
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 300
+        width: 219
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_12
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 300
+        width: 220
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_13
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 300
+        width: 220
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 108
+        width: 455
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 108
+        width: 455
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_16
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 107
+        width: 457
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_17
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 107
+        width: 457
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GiveME_18
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 107
+        width: 455
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

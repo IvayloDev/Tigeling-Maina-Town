@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: ef08a325ad2b8704e91d696ba7e2cc83
+timeCreated: 1474529450
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SS_MT_0
+    21300002: SS_MT_1
+    21300004: SS_MT_2
+    21300006: SS_MT_3
+    21300008: SS_MT_4
+    21300010: SS_MT_5
+    21300012: SS_MT_6
+    21300014: SS_MT_7
+    21300016: SS_MT_8
+    21300018: SS_MT_9
+    21300020: SS_MT_10
+    21300022: SS_MT_11
+    21300024: SS_MT_12
+    21300026: SS_MT_13
+    21300028: SS_MT_14
+    21300030: SS_MT_15
+    21300032: SS_MT_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SS_MT_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_1
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_2
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_3
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_4
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_5
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_6
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_7
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 323
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 45
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_10
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_11
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_12
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_13
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_14
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SS_MT_15
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 46
+        width: 430
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

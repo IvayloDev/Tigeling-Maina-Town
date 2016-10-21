@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 6c16cbe826fcb2548a20d3a86a1a162c
+timeCreated: 1475316764
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: endScreenSheet_2
+    21300002: endScreenSheet_5
+    21300004: endScreenSheet_6
+    21300006: endScreenSheet_8
+    21300008: endScreenSheet_16
+    21300010: endScreenSheet_19
+    21300012: endScreenSheet_23
+    21300014: endScreenSheet_26
+    21300016: endScreenSheet_29
+    21300018: endScreenSheet_33
+    21300020: endScreenSheet_35
+    21300022: endScreenSheet_37
+    21300024: endScreenSheet_40
+    21300026: endScreenSheet_41
+    21300028: endScreenSheet_47
+    21300030: endScreenSheet_61
+    21300032: endScreenSheet_62
+    21300034: endScreenSheet_73
+    21300036: endScreenSheet_0
+    21300038: endScreenSheet_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: endScreenSheet_2
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1930
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1428
+        width: 683
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_6
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1809
+        width: 273
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_16
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1629
+        width: 184
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_19
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1695
+        width: 137
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_23
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1581
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_26
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1517
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_29
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1467
+        width: 65
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_33
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1403
+        width: 89
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_35
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1343
+        width: 136
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_37
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1353
+        width: 113
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_40
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1279
+        width: 113
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_41
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1336
+        width: 72
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_47
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1272
+        width: 110
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_61
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1234
+        width: 110
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_62
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1239
+        width: 684
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_73
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 421
+        width: 546
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_0
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1989
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: endScreenSheet_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 835
+        width: 139
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

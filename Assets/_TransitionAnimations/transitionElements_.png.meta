@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 463b162ab7e7dea4daba2738daa6ff1f
+timeCreated: 1474650064
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: transitionElements__0
+    21300002: transitionElements__1
+    21300004: transitionElements__2
+    21300006: transitionElements__3
+    21300008: go1
+    21300010: transitionElements__6
+    21300012: transitionElements__7
+    21300014: transitionElements__9
+    21300016: transitionElements__10
+    21300018: transitionElements__12
+    21300020: transitionElements__14
+    21300022: transitionElements__15
+    21300024: transitionElements__16
+    21300026: go2
+    21300028: transitionElements__19
+    21300030: transitionElements__20
+    21300032: transitionElements__21
+    21300034: transitionElements__23
+    21300036: transitionElements__4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: transitionElements__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 893
+        width: 576
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__1
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 923
+        width: 437
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 820
+        width: 437
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 634
+        width: 561
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: go1
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 615
+        width: 297
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 504
+        width: 561
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 410
+        width: 297
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 377
+        width: 545
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__10
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 244
+        width: 237
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__12
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 318
+        width: 205
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 250
+        width: 545
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__15
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 257
+        width: 149
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 507
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: go2
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 96
+        width: 211
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__19
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 197
+        width: 149
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__20
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 136
+        width: 149
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 14
+        width: 507
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__23
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 4
+        width: 203
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: transitionElements__4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 762
+        width: 576
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

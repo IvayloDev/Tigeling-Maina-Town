@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: d9775e9da0f44924591cd5321f462502
+timeCreated: 1475313076
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UI_spriteSheet_0
+    21300002: UI_spriteSheet_1
+    21300004: UI_spriteSheet_2
+    21300006: UI_spriteSheet_4
+    21300008: UI_spriteSheet_7
+    21300010: UI_spriteSheet_1
+    21300012: UI_spriteSheet_8
+    21300014: UI_spriteSheet_9
+    21300016: UI_spriteSheet_23
+    21300018: UI_spriteSheet_15
+    21300020: UI_spriteSheet_36
+    21300022: UI_spriteSheet_37
+    21300024: UI_spriteSheet_43
+    21300026: UI_spriteSheet_46
+    21300028: UI_spriteSheet_53
+    21300030: UI_spriteSheet_54
+    21300032: UI_spriteSheet_5722
+    21300034: UI_spriteSheet_64
+    21300036: UI_spriteSheet_6222
+    21300038: UI_spriteSheet_68
+    21300040: UI_spriteSheet_65
+    21300042: UI_spriteSheet_66
+    21300044: UI_spriteSheet_45
+    21300046: UI_spriteSheet_41
+    21300048: UI_spriteSheet_20
+    21300050: UI_spriteSheet_62
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1436
+        width: 75
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1388
+        width: 141
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1298
+        width: 564
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1252
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1077
+        width: 765
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 923
+        width: 115
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 934
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 827
+        width: 160
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 811
+        width: 126
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 711
+        width: 173
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 619
+        width: 580
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_5722
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 38
+        width: 559
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 291
+        width: 72
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 242
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 203
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 38
+        width: 28
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 38
+        width: 105
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 721
+        width: 135
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 824
+        width: 141
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UI_spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 921
+        width: 134
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

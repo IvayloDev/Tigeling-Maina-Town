@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 9b3481bb118c35a488983586aa7d2950
+timeCreated: 1476441099
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: arkade_HtP_sheet (1)_0
+    21300002: arkade_HtP_sheet (1)_1
+    21300004: arkade_HtP_sheet (1)_2
+    21300006: arkade_HtP_sheet (1)_3
+    21300008: arkade_HtP_sheet (1)_4
+    21300010: arkade_HtP_sheet (1)_5
+    21300012: arkade_HtP_sheet (1)_6
+    21300014: arkade_HtP_sheet (1)_7
+    21300016: arkade_HtP_sheet (1)_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 181
+        width: 58
+        height: 114
+      alignment: 9
+      pivot: {x: 0.49145362, y: 0.11518297}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 181
+        width: 87
+        height: 108
+      alignment: 9
+      pivot: {x: 0.685174, y: 0.11904808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 181
+        width: 93
+        height: 107
+      alignment: 9
+      pivot: {x: 0.32144296, y: 0.13052255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_3
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 155
+        width: 74
+        height: 96
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 153
+        width: 73
+        height: 130
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 37
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_6
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 35
+        width: 84
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_7
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 27
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arkade_HtP_sheet (1)_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 95
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

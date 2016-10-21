@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: e66361d0411812a47aef094f51635066
+timeCreated: 1475315663
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: howToPlay_sheet_21
+    21300002: howToPlay_sheet_22
+    21300004: howToPlay_sheet_2
+    21300006: howToPlay_sheet_3
+    21300008: howToPlay_sheet_9
+    21300010: howToPlay_sheet_5
+    21300012: howToPlay_sheet_6
+    21300014: howToPlay_sheet_7
+    21300016: howToPlay_sheet_8
+    21300018: howToPlay_sheet_9
+    21300020: howToPlay_sheet_10
+    21300022: howToPlay_sheet_11
+    21300024: howToPlay_sheet_12
+    21300026: howToPlay_sheet_13
+    21300028: howToPlay_sheet_14
+    21300030: howToPlay_sheet_15
+    21300032: howToPlay_sheet_16
+    21300034: howToPlay_sheet_17
+    21300036: Promoters
+    21300038: howToPlay_sheet_14
+    21300040: howToPlay_sheet_20
+    21300042: howToPlay_sheet_21
+    21300044: howToPlay_sheet_22
+    21300046: howToPlay_sheet_23
+    21300048: howToPlay_sheet_24
+    21300050: howToPlay_sheet_25
+    21300052: howToPlay_sheet_26
+    21300054: howToPlay_sheet_27
+    21300056: howToPlay_sheet_28
+    21300058: howToPlay_sheet_29
+    21300060: howToPlay_sheet_30
+    21300062: howToPlay_sheet_31
+    21300064: howToPlay_sheet_32
+    21300066: howToPlay_sheet_33
+    21300068: howToPlay_sheet_34
+    21300070: howToPlay_sheet_35
+    21300072: howToPlay_sheet_36
+    21300074: howToPlay_sheet_37
+    21300076: howToPlay_sheet_38
+    21300078: howToPlay_sheet_39
+    21300080: howToPlay_sheet_40
+    21300082: howToPlay_sheet_41
+    21300084: howToPlay_sheet_42
+    21300086: howToPlay_sheet_43
+    21300088: howToPlay_sheet_44
+    21300090: howToPlay_sheet_45
+    21300092: howToPlay_sheet_46
+    21300094: howToPlay_sheet_47
+    21300096: howToPlay_sheet_48
+    21300098: howToPlay_sheet_49
+    21300100: howToPlay_sheet_50
+    21300102: howToPlay_sheet_51
+    21300104: howToPlay_sheet_52
+    21300106: howToPlay_sheet_53
+    21300108: howToPlay_sheet_54
+    21300110: howToPlay_sheet_55
+    21300112: howToPlay_sheet_56
+    21300114: howToPlay_sheet_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: howToPlay_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 107
+        width: 67
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 107
+        width: 69
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 212
+        width: 110
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 216
+        width: 98
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 68
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 100
+        width: 67
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Promoters
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 112
+        width: 111
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 174
+        width: 98
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 103
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 13
+        width: 92
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 52
+        width: 71
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 51
+        width: 223
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 20
+        width: 137
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 16
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 23
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 828
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 212
+        width: 110
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: howToPlay_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 208
+        width: 167
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
